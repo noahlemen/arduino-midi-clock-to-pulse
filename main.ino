@@ -41,6 +41,7 @@ void loop() {
       resetOuts();
     } else if ((data == midi_clock) && (play_flag == 1)) {
       checkSteps();
+      doPulses();
       incrementCount();
     }
   }
